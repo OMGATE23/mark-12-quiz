@@ -1,0 +1,18 @@
+const sideInputs = document.querySelectorAll(".side-input")
+const submitButton = document.querySelector("#hypotenuse-button")
+const outputE3 = document.querySelector("#output")
+
+submitButton.addEventListener('click', calculateHypotenuse)
+
+function calculateHypotenuse(){
+    sideOne = Number(sideInputs[0].value);
+    sideTwo = Number(sideInputs[1].value);
+
+    sideOneSquared = Math.pow(sideOne, 2)
+    sideTwoSquared = Math.pow(sideTwo, 2)
+
+    hypotenuseLength = Math.round(Math.sqrt((sideOneSquared + sideTwoSquared)))
+
+    outputE3.innerText = "Hypotenuse length = " + hypotenuseLength
+   
+}
