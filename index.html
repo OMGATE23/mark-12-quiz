@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Triangle</title>
 </head>
 <body>
-    <h1>Is Triangle</h1>
+    <header>
+        <h1>Is Triangle</h1>
+        <span class="header-link">
+            <a href="./hypotenuse.html">Hypotenuse</a>
+            <a href="./quiz.html">Quiz</a>
+        </span>
+        
+    </header>
     
-    <label for="angle-1"></label>
-    <input type="number" class="angle-input">
-    <label for="angle-2"></label>
-    <input type="number" class="angle-input">
-    <label for="angle-3"></label>
-    <input type="number" class="angle-input">
+    <div class="container">
+        <label for="angle-1">Enter angle 1</label>
+        <input type="number" class="angle-input">
+        <label for="angle-2">Enter angle 2</label>
+        <input type="number" class="angle-input">
+        <label for="angle-3">Enter angle 3</label>
+        <input type="number" class="angle-input">
+        <button id="is-traingle-btn">Check</button>
+        <div id="output"></div>
+    </div>
     
-    <button id="is-traingle-btn">Check</button>
-    
-    <div id="output"></div>
 </body>
     <script src="./app.js"></script>
 </html>
