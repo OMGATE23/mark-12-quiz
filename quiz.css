@@ -43,18 +43,21 @@ header {
 .header-link {
     /* outline: 2px solid black; */
     margin-right: 2rem;
+    text-align: center;
 }
 .header-link a {
     /* outline: 2px solid black; */
     margin: 1rem;
     border: 0;
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
+    
 }
 
-a:hover,
-a:focus {
-    font-weight: 700;
+.header-link a:hover,
+.header-link a:focus {
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .main-container {
@@ -99,4 +102,38 @@ button:focus{
     font-weight: 1.25rem;
     margin-top: 0.75rem;
     padding: 0.75rem;
+}
+
+@media(max-width: 650px){
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .header-link {
+        margin-right: 2rem;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .header-link a {
+        margin: 0;
+        padding: 0rem;
+        text-decoration: underline;
+    }
+
+    .main-container {
+        margin: 4rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .question-container {
+        padding: 1rem;
+    }
+
+    #output {
+        font-size: 1.5rem;
+    }
 }
