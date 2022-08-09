@@ -92,3 +92,22 @@ button:focus {
     margin: 1rem;
     font-size: 1.25rem;
 }
+
+@media(max-width:650px) {
+    .header-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        width: 150px;
+    }
+
+    .container {
+        margin: 2rem 1.5rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+}
