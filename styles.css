@@ -2,16 +2,14 @@
 
 
 :root {
-    --violet-50: #f5f3ff;
-    --violet-100: #ede9fe;
-    --violet-200: #ddd6fe;
-    --violet-300: #c4b5fd;
-    --violet-400: #a78bfa;
-    --violet-500: #8b5cf6;
-    --violet-600: #7c3aed;
-    --violet-700: #6d28d9;
-    --violet-800: #5b21b6;
-    --violet-900: #4c1d95;
+    --yellow-50: #fefce8;
+    --yellow-100: #fef9c3;
+    --yellow-200: #fef08a;
+    --yellow-300: #fde047;
+    --yellow-400: #facc15;
+    --yellow-500: #eab308;
+    --yellow-600: #ca8a04;
+    --yellow-700: #a16207;
 }
 
 body {
@@ -33,7 +31,7 @@ header {
     justify-content:space-between;
     justify-items:flex-end;
     /* outline: 2px solid black; */
-    background-color: var(--violet-700);
+    background-color: var(--yellow-500);
     color: white;
     padding: 1rem 0 1rem 0;
     border-radius: 0 0 1.5rem 1.5rem;
@@ -89,7 +87,7 @@ button {
     padding: 0.75rem 1.5rem;
     font-size: 1.1rem;
     color: white;
-    background-color: var(--violet-700);
+    background-color: var(--yellow-500);
     cursor: pointer;
 }
 
