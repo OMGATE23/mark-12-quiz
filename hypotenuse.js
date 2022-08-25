@@ -8,11 +8,16 @@ function calculateHypotenuse(){
     sideOne = Number(sideInputs[0].value);
     sideTwo = Number(sideInputs[1].value);
 
-    sideOneSquared = Math.pow(sideOne, 2)
-    sideTwoSquared = Math.pow(sideTwo, 2)
 
-    hypotenuseLength = Math.round(Math.sqrt((sideOneSquared + sideTwoSquared)))
+    if (sideOne ===0 || sideTwo ==0){
+        outputE3.innerText = "Enter Valid Inputs"
+    } else {
+        sideOneSquared = Math.pow(sideOne, 2)
+        sideTwoSquared = Math.pow(sideTwo, 2)
 
-    outputE3.innerText = "Hypotenuse length = " + hypotenuseLength
-   
+        hypotenuseLength = Math.round(Math.sqrt((sideOneSquared + sideTwoSquared)))
+
+        outputE3.innerText = "Hypotenuse length = " + hypotenuseLength
+    }
+
 }

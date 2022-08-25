@@ -2,7 +2,7 @@ const quizForm = document.querySelector(".quiz-form")
 const submitButton = document.querySelector("#submit-answer-button")
 const outputE2 = document.querySelector("#output")
 
-const correctAnswers = ["90°", "right angled"]
+const correctAnswers = ["90°", "right angled","60°","Isosceles Triangle","Equilateral Triangle","Scalene Triangle", "40°", "80°", "60°", "more than 90°"]
 
 submitButton.addEventListener('click', calculateScore)
 
