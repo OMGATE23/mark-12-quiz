@@ -15,14 +15,26 @@ function addAngles(angle1,angle2,angle3){
     return angle1 + angle2 + angle3
 }
 function checkTriangle(){
-    let sum = addAngles(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value))
 
-    if (sum === 180) {
-        output1.innerText = "Yes it is"
-    }
+    let angle1 = Number(inputs[0].value)
+    let angle2 = Number(inputs[1].value)
+    let angle3 = Number(inputs[2].value)
 
-    else {
-        output1.innerText = "No its not"
+    if(angle1 < 0 || angle2 < 0 || angle3 < 0){
+        output1.innerText = "Enter valid inputs which are non-zero positive integers"
+    } else {
+        let sum = addAngles(angle1, angle2, angle3)
+
+
+
+        if (sum === 180) {
+            output1.innerText = "Yes it is"
+        }
+
+        else {
+            output1.innerText = "No its not"
+        }
     }
+    
 }
 
