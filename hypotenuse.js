@@ -15,7 +15,7 @@ function calculateHypotenuse(){
         sideOneSquared = Math.pow(sideOne, 2)
         sideTwoSquared = Math.pow(sideTwo, 2)
 
-        hypotenuseLength = Math.round(Math.sqrt((sideOneSquared + sideTwoSquared)))
+        hypotenuseLength = (Math.sqrt((sideOneSquared + sideTwoSquared))).toFixed(2)
 
         outputE3.innerText = "Hypotenuse length = " + hypotenuseLength
     }
