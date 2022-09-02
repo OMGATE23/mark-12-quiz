@@ -28,11 +28,11 @@ function checkTriangle(){
 
 
         if (sum === 180) {
-            output1.innerText = "Yes it is"
+            output1.innerText = "It makes a triangle"
         }
 
         else {
-            output1.innerText = "No its not"
+            output1.innerText = "No it doesnt make a triangle. It is" + Math.abs(180 - sum) +" angles away"
         }
     }
     
