@@ -9,7 +9,7 @@ function calculateHypotenuse(){
     sideTwo = Number(sideInputs[1].value);
 
 
-    if (sideOne ===0 || sideTwo ==0){
+    if (sideOne < 0 || sideTwo < 0){
         outputE3.innerText = "Enter Valid Inputs"
     } else {
         sideOneSquared = Math.pow(sideOne, 2)
