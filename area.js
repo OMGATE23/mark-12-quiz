@@ -8,7 +8,7 @@ function clickHandler(){
     sideOne = Number(sideInputs[0].value)
     sideTwo = Number(sideInputs[1].value)
     
-    if(sideOne ===0 || sideTwo ===0){
+    if(sideOne < 0 || sideTwo < 0){
         outputDiv.innerText = "Input valid inputs"
     } else {
         let area = sideOne*sideTwo*0.5
