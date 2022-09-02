@@ -16,3 +16,6 @@ Gives area of the triangle by the height and base of triangle given
 
 ## Project Image
 ![alt text](https://omgate.netlify.app/images/mark-12-screenshot.png)
+
+## Project Demo
+https://mark-12-quiz.netlify.app/
